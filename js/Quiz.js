@@ -32,9 +32,11 @@ class Quiz {
     question.hide();
     background("Yellow");
     fill(0);
-    textSize(30);
-    text("Result of the Quiz",340, 50);
-    text("----------------------------",320, 65);
+
+    
+    
+    //add text for question and dash
+    
     Contestant.getPlayerInfo();
     if(allContestants !== undefined){
       debugger;
@@ -51,9 +53,10 @@ class Quiz {
         else
           fill("red");
 
-        display_Answers+=30;
-        textSize(20);
-        text(allContestants[plr].name + ": " + allContestants[plr].answer, 250,display_Answers)
+       //display contestants name and answers
+        
+        
+        
       }
     }
   }
