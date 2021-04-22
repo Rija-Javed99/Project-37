@@ -1,8 +1,6 @@
 class Contestant {
   constructor(){
-    this.index = null;
-    this.answer = 0;
-    this.name = null;
+
   }
 
   getCount(){
@@ -25,11 +23,5 @@ class Contestant {
       answer:this.answer
     });
   }
-
-  static getPlayerInfo(){
-    var contestantInfoRef = database.ref('contestants');
-    contestantInfoRef.on("value",(data)=>{
-      allContestants = data.val();
-    })
-  }
+//create the static function for all players info
 }
